@@ -1,0 +1,17 @@
+p#editor{
+	width: 100%;
+	height: 75vh;
+	min-height: 75vh;
+	max-height: 75vh;
+	border-style: solid;
+	padding: 2%;
+}
+p[contenteditable]{
+	border: none;
+}
+#upimg{
+	width: 90%;
+}
+h3{
+	text-align: center;
+}

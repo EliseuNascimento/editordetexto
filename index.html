@@ -1,0 +1,71 @@
+<html>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<head>
+	<title>Editor de texto</title>
+</head>
+<body>
+	<div class="container">
+		<h3>EDITOR DE TEXTO</h3>
+		<div class="row">
+			<div class="col-sm-2">
+				<select class="form-control" id="fonte" onchange="MudaFonte()">
+					<option disabled="disabled" selected>Fonte</option>
+					<option value="Arial">Arial</option>
+					<option value="Times New Roman">Times New Roman</option>
+					<option value="Tahoma">Tahoma</option>
+				</select>
+			</div>
+			<div class="col-sm-2">
+				<select class="form-control" id="tamanho" onchange="MudaTamanho()">
+					<option disabled="disabled" selected>Tamanho</option>
+					<option value="10pt">10</option>
+					<option value="12pt">12</option>
+					<option value="14pt">14</option>
+					<option value="16pt">16</option>
+					<option value="18pt">18</option>
+					<option value="20pt">20</option>
+					<option value="40pt">40</option>
+				</select>
+			</div>
+			<div class="col-sm-2">
+				<input type="color" id="cor" class="form-control" onchange="MudaCor()">
+			</div>
+			<div class="col-sm-2">
+				<select class="form-control" id="estilo" onchange="MudaEstilo()">
+					<option disabled="disabled" selected>Estilo</option>
+					<option value="bold" id="bold">Negrito</option>
+					<option value="italic" id="italic">Itático</option>
+					<option value="underline" id="underline">Sublinhado</option>
+				</select>
+			</div>
+			<div class="col-sm-2">
+				<select class="form-control" id="alinhamento" onchange="MudaAlinhamento()">
+					<option disabled="disabled" selected>Alinhamento</option>
+					<option value="left">Esquerda</option>
+					<option value="center">Centro</option>
+					<option value="right">Direita</option>
+					<option value="justify">Justificado</option>
+				</select>
+			</div>
+			<div class="col-sm-2">
+				<input type="file" name="arquivos" class="btn " id="upimg" accept="image/png, image/jpeg"  multiple />
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="area_editor">
+					<p id="editor" contenteditable autofocus></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
